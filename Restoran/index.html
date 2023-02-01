@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yıldız Cafe</title>
+    <style>
+        /*Menü*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            padding: 20px 25px;
+        }
+        nav{
+            display: inline-block;
+            width: calc(100% - 103px);
+            text-align: right;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 10px 25px;
+        }
+        .logo{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 25px;
+            font-size: 22px;
+        }
+        nav ul li a:hover{
+            background-color: #fff;
+            color: black;
+        }
+        /*Menü Altındaki Resim Kısmı*/
+
+        #section-1{
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(./2.webp);
+            background-position: top;
+            padding: 12px;
+            height: 850px;
+            width: 100%;
+            background-size: cover;
+        }
+        .btn-s1{
+            margin-left: 40%;
+            margin-top: 20%;
+            background-color: #E94560;
+            color: #fff;
+            padding: 25px 20px;
+            font-size: 20px;
+            border-radius: 6px;
+            transition: color 1s;
+
+        }
+        .btn-s1:hover{
+            color: black;
+        }
+        /*card*/
+        #section-2{
+            display: flex;
+            justify-content: space-around;
+            margin: 200px 0;
+        }
+        .card{
+            width: 20%;
+            box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
+            border-radius: 6px;
+        }
+        .card:hover{
+            opacity: 0.7;
+        }
+    .container{
+        padding: 5px 20px;
+    }
+    .container p{
+        margin: 15px 0;
+    }
+    img{
+        border-radius: 6px 6px 0 0;
+        width: 100%;
+    }
+    p{
+        font-size: 19px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Yıldız</a>
+        <nav>
+            <ul>
+                <li><a href="#">Menü</a></li>
+                <li><a href="#">Siparişlerim</a></li>
+                <li><a href="https://www.instagram.com/eyupyldzoffical/">İnstagram</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-1">
+            <button class="btn-s1">MENÜLERİ GÖRMEK İÇİN TIKLA</button>
+        </section>
+
+        <section id="section-2">
+            <div class="card">
+                <img src="./hamburger.webp" alt="Hamburger">
+                <div class="container">
+                    <h2>Hamburger Çeşitleri</h2>
+                    <p>Daha Güzel Ve Daha Lezzetli Hamburger Çeşitlerini Görmek İçin Tıkla</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="./tatlı.jpg" alt="Tatlı">
+                <div class="container">
+                    <h2>Tatlı Çeşitleri</h2>
+                    <p>Lezzetli Ve Yeni Gelen Tatlıları Tatmak İstiyorsan Tıkla</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./içeçek.jpg" alt="İçecek">
+                <div class="container">
+                    <h2>İçecek Çeşitleri</h2>
+                    <p>Kış Yaz Demeden İçecek İçmek İstiyorsan Tam Sana Göre İçecekler İçin Tıkla</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
